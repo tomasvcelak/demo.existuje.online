@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Online grafický manuál pro udržení jednotného vizuálního stylu zdarma." />
+  <meta name="keywords" content="vizuální identita, grafický manuál, jednotný vizuální styl, značka, online" />
+  <meta name="author" content="all: Tomáš Včelák; info@tomasvcelak.cz" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, snippet, archive" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="icon" type="image/svg+xml" href="/global/favicon/favicon-on-light.svg" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/svg+xml" href="/global/favicon/favicon-on-dark.svg" media="(prefers-color-scheme: dark)">
+
+  <title>Logo | demo.existuje.online</title>
+
+  <link href="/global/css/halfmoon-variables.min.css" rel="stylesheet" />
+  <link href="/global/icons/icons.css" rel="stylesheet" />
+  <link href="/global/css/styles.min.css" rel="stylesheet" />
+  <link href="/global/css/mavo.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+  <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="full-height overlayed-sm-and-down">
+    <div class="sticky-alerts"></div>
+
+      <nav class="navbar">
+        <div class="navbar-content">
+            <button id="toggle-sidebar-btn" class="btn btn-square btn-rounded" type="button" onclick="changeIcon(); halfmoon.toggleSidebar()">
+              <svg id="menu-icon" class="onicon">
+                <use xlink:href="/global/icons/icons.svg#menu"/>
+              </svg>          </button>
+            </div>
+        <div class="ml-auto">
+          <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jazyková mutace není dostupná." data-placement="bottom" type="button">
+            <svg class="onicon">
+              <use href="/global/icons/icons.svg#language"/>
+            </svg>
+          </button>
+          <a href="#modal-2"><button class="btn btn-square btn-rounded" type="button">
+            <svg class="onicon">
+              <use href="/global/icons/icons.svg#login"/>
+            </svg>
+          </button></a> 
+          <div class="dropdown with-arrow">
+            <button class="btn btn-primary btn-rounded" data-toggle="dropdown" type="button" id="dropdown-toggle-btn-1" aria-haspopup="true" aria-expanded="false">
+              <svg class="onicon">
+                <use href="/global/icons/icons.svg#contact"/>
+              </svg><span class="pl-5 hidden-sm-and-down">Kontakt</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-toggle-btn-1">
+                <h6 class="dropdown-header">Podpora</h6>
+              <a href="tel:+420123456789" class="dropdown-item">
+                <svg class="onicon">
+                  <use href="/global/icons/icons.svg#mobile"/>
+                </svg>
+                +420 123 456 789</a>
+                <a href="mailto:someone@example.cz" class="dropdown-item">
+                <svg class="onicon">
+                  <use href="/global/icons/icons.svg#mail"/>
+                </svg>
+                info@existuje.online
+                </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+      <div class="sidebar">
+        <div class="sidebar-content position-absolute bottom-0">
+          <code class="code"><svg class="onicon">
+            <use href="/global/icons/icons.svg#change"/>
+          </svg><span class="pl-10">Aktualizace 18.04.2023</span></code>
+        </div> 
+      
+        <div class="sidebar-menu" id="menu-items">
+          <div class="sidebar-brand">
+              <div class="custom-switch brand-rotate">
+                <input type="checkbox" id="switch-toggle" checked="checked" onclick="halfmoon.toggleDarkMode()">
+                <label for="switch-toggle"></label>              </div>
+              <div class="d-flex flex-column pt-5">
+                <div class="font-size-18 brand-font">existuje.online</div>
+                <div class="font-size-12 brand-font"><a href="https://existuje.online/" target="_blank">www.existuje.online</a></div>
+              </div>
+            </div>
+            <div class="sidebar-content">
+              <input type="text" class="form-control search" placeholder="Hledat" id="search-repo-input">
+            </div>
+
+            <ul class="list">
+              <li>
+                <a href="/" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg>
+                </span>
+                Úvod
+                </a>
+              </li>
+              <li>
+                <h5 class="sidebar-title">Vizuální styl</h5>
+                <div class="sidebar-divider"></div>
+              </li>
+              <li>
+                <a href="/brand" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg>
+                </span>
+                Značka
+                </a>
+              </li>
+              <li>
+                <a href="/logo" class="sidebar-link sidebar-link-with-icon active">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg>
+                </span>
+                Logo 
+                </a>
+              </li>
+              <li>
+                <a href="/colors" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg>          
+                </span>
+                Barevnost
+                </a>
+              </li>
+              <li>
+                <a href="/pismo" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg> 
+                </span>
+                Písmo
+                </a>
+              </li>
+              <li>
+                <a href="/layout" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg> 
+                </span>
+                Layout
+                </a>
+              </li>
+              <li>
+                <a href="/elements" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg> 
+                </span>
+                Grafické prvky
+                </a>
+              </li>
+              <li>
+                <a href="/photography" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg> 
+                </span>
+                Fotografie
+                </a>
+              </li>
+              <br />
+
+              <li>
+                <h5 class="sidebar-title">Grafický výstup</h5>
+                <div class="sidebar-divider"></div>
+              </li>
+              <li>
+                <a href="/editor" class="sidebar-link sidebar-link-with-icon">
+                <span class="sidebar-icon rounded-circle">
+                <svg class="sidebar-onicon">
+                <use href="/global/icons/icons.svg#circle"/>
+                </svg> 
+                </span>
+                Editor
+                </a>
+               </li>
+              <br />
+
+          </div>
+        </div>
+
+    <div class="content-wrapper">
+        <!----------------------------->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-9">
+          
+              <div class="content">
+                <span id="logo" class="badge badge-pill mb-5">2.0</span>
+                  <div class="row justify-content-between">
+                   <div class="col">
+                    <h1 class="content-title font-size-30">
+                      Logo a jeho použití
+                    </h1>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-20">
+                  Veškeré varianty loga vycházejí z názvu značky vysázené písmem existuje.sora v řezu 380. Součástí loga je grafický symbol z počátečního písmena slova online ve stylu přepínače, který symbolizuje přechod od starších variant manuálů k nové online verzi.
+                </p>
+              </div>
+
+              <div class="content">                
+                  <div class="row row-content justify-content-between">
+                   <div class="col">
+                    <span id="logo-mozne-varianty" class="badge badge-pill mb-5 mt-5">2.1</span>
+                    <h2 class="mt-5 content-title font-size-24">
+                      Možné varianty loga
+                    </h2>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo-mozne-varianty')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo-mozne-varianty')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-18">
+                  Logo je vytvořeno ve vertikální a horizontální verzi. Vertikální verze je zalomena do dvouřádkové formy, kde první řádek je ukončen tečkou a druhý řádek započat symbolem.
+                </p>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-1.svg" class="img-full" alt="Obrázek – Vertikální verze loga">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Vertikální verze loga
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-2.svg" class="img-full" alt="Obrázek – Horizontální verze loga">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Horizontální verze loga
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content">                
+                  <div class="row row-content justify-content-between">
+                   <div class="col">
+                    <span id="logo-zapis-v-textu" class="badge badge-pill mb-5 mt-5">2.2</span>
+                    <h2 class="mt-5 content-title font-size-24">
+                      Zápis loga v textu
+                    </h2>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo-zapis-v-textu')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo-zapis-v-textu')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-18">
+                  Pro vizuální komunikaci používáme písmo existuje.sora <a href="/pismo" class="align-middle badge badge-pill mb-5">4.0</a>. Součástí písma je glyf se symbolem z&nbsp;loga, který umožňuje zapsat logo přímo v textu pomocí znaku ô. 
+                </p>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-3.svg" class="img-full" alt="Obrázek – Zápis loga">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Zápis loga
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-4.svg" class="img-full" alt="Obrázek – Výsledný zápis">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Výsledný zápis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="content">                
+                  <div class="row row-content justify-content-between">
+                   <div class="col">
+                    <span id="logo-barevnost" class="badge badge-pill mb-5 mt-5">2.3</span>
+                    <h2 class="mt-5 content-title font-size-24">
+                      Barevnost loga
+                    </h2>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo-barevnost')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo-barevnost')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-18">
+                  Barva loga je buď bílá nebo černá, doplněná fialovým akcentem. Výběr barvy loga závisí na podkladovém pozadí, které musí zajišťovat dostatečný kontrast mezi černou a bílou barvou, aby logo bylo snadno čitelné a rozpoznatelné.
+                </p>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-5.svg" class="img-full" alt="Obrázek – Barevnost loga u vertikální verze">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Barevnost loga u vertikální verze
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-6.svg" class="img-full" alt="Obrázek – Barevnost loga u horizontální verze">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Barevnost loga u horizontální verze
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="content">                
+                  <div class="row row-content justify-content-between">
+                   <div class="col">
+                    <span id="logo-ochranna-zona" class="badge badge-pill mt-5">2.4</span>
+                    <h2 class="mt-5 content-title font-size-24">
+                      Ochranná zóna loga
+                    </h2>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo-ochranna-zona')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo-ochranna-zona')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-18">
+                  Okolí loga je chráněno prostřednictvím ochranné zóny, která u obou variant vychází z 50 % výšky celého loga. Ochranná zóna zajišťuje dostatečný vizuální prostor kolem loga tím, že udržuje vzdálenost od možných rušivých elementů.                </p>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-7.svg" class="img-full" alt="Obrázek – Ochranná zóna u vertikální verze">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Ochranná zóna u vertikální verze
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-8.svg" class="img-full" alt="Obrázek – Ochranná zóna u horizontální verze">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Ochranná zóna u horizontální verze
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content">                
+                  <div class="row row-content justify-content-between">
+                   <div class="col">
+                    <span id="logo-minimalni-velikost"class="badge badge-pill mt-5">2.5</span>
+                    <h2 class="mt-5 content-title font-size-24">
+                      Minimální velikost loga
+                    </h2>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo-minimalni-velikost')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo-minimalni-velikost')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-18">
+                  Velikost loga je založena na základní, předem stanovené 100% velikosti. Horizontální varianta loga má ve 100% velikosti rozměry 230 × 100 px a vertikální varianta má rozměry 776 × 100 px. Minimální velikost pro obě verze loga je stanovena na 20 % základní velikosti, což zaručuje zachování čitelnosti a rozpoznatelnosti loga.
+                </p>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-4">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-9.svg" class="img-full" alt="Obrázek – Základní velikost vertikální verze">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Velikost vertikální verze 100&nbsp;%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-10.svg" class="img-full" alt="Obrázek – Velikost vertikální verze 50 %">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Velikost vertikální verze 50&nbsp;%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-11.svg" class="img-full" alt="Obrázek – Velikost vertikální verze 20 %">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Velikost vertikální verze 20&nbsp;%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-7">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-12.svg" class="img-full" alt="Obrázek – Velikost horizontální verze 50 %">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Velikost horizontální verze 50&nbsp;%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-5">
+                  <div class="card p-0">
+                    <img src="/manual/logo/img_logo-13.svg" class="img-full" alt="Obrázek – Velikost horizontální verze 20 %">
+                    <div class="px-card py-10">
+                      <p class="font-size-12 m-0">
+                        Velikost horizontální verze 20&nbsp;%
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content">                
+                  <div class="row row-content justify-content-between">
+                   <div class="col">
+                    <span id="logo-stazeni" class="badge badge-pill mt-5">2.6</span>
+                    <h2 class="mt-5 content-title font-size-24">
+                      Loga ke stažení
+                    </h2>
+                   </div>
+                  <div class="col-12 col-sm-3 mt-5">
+                    <div class="text-sm-right">
+                      <button class="btn btn-square btn-rounded" type="button" onclick="sendEmail('logo-stazeni')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#send"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" data-toggle="tooltip" data-title="Jen pro smartphone." data-placement="top" type="button">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#share"/>
+                        </svg>
+                      </button>
+                      <button class="btn btn-square btn-rounded" type="button" onclick="copyLink(this, 'logo-stazeni')">
+                        <svg class="onicon">
+                          <use href="/global/icons/icons.svg#link"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-sm-0 font-size-18">
+                  V závisloti na použití je doporučeno stáhnout vhodnou variantu loga. Vždy je duležité stahovat aktuální logo, které se nachází právě zde. Použití je nutné v souladu s pokyny.
+                </p>
+              </div>
+
+              <div class="row row-eq-spacing-xl">
+                <div class="col-xl-12">
+                  <div class="card">
+                    <div class="d-flex flex-md-row flex-column-reverse">
+                      <div class="m-0 card card-logo col-md-8 flex-fill text-center position-relative">
+                        <div class="protection-zone logo-container flex-fill text-center position-relative" data-show-zone="true">
+                          <img src="/manual/00-logopack/01-digital-rgb/01-logo-horizontal/01-logo-horizontal_full-color-on-light.svg" class="img-logo" alt="logo">
+                        </div>
+                        <div class="d-flex flex-row btn-rounded hidden-md-and-up mt-20">
+                          <div class="align-self-center">
+                            <div class="custom-checkbox mr-10" data-toggle="tooltip" data-title="Po stažení budu dodržovat pravidla.">
+                              <input type="checkbox" id="checkbox-1" value="">
+                              <label for="checkbox-1" class="blank"></label>
+                            </div>
+                          </div>
+                          <div class="w-full d-inline-block">
+                            <button id="download-button-mobile" class="btn btn-block btn-rounded">
+                            <svg class="onicon">
+                              <use href="/global/icons/icons.svg#download"/>
+                            </svg>
+                            <span class="pl-5">Stáhnout</span>
+                          </button>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card m-0 col-md-4">
+                      <div class="flex-fill align-items-end flex-column">
+                        <h3 class="card-title font-size-16 mb-5">
+                          Barevný režim
+                        </h3>
+                          <div class="custom-radio mb-10">
+                            <input type="radio" name="rgb-vs-digital" id="radio-rgb" checked="checked" value="radio-rgb">
+                            <label for="radio-rgb">Obrazovka RGB</label>
+                          </div>
+                          <div class="custom-radio mb-10">
+                            <input type="radio" name="rgb-vs-digital" id="radio-cmyk" value="radio-cmyk">
+                            <label for="radio-cmyk">Tisk CMYK</label>
+                          </div>
+                          <h3 class="card-title font-size-16 mb-5">
+                            Typ loga
+                          </h3>
+                          <select class="form-control btn-block mb-10" id="select-1">
+                            <option value="01-logo-horizontal" selected="selected" disabled="disabled">Výběr typu loga</option>
+                            <option value="01-logo-horizontal">Horizontální</option>
+                            <!-- <option value="02-logo-horizontal-claim">Horizontální s claimem</option> -->
+                            <option value="03-logo-vertical">Vertikální</option>
+                            <!-- <option value="04-logo-vertical-claim">Vertikální s claimem</option> -->
+                            <option value="05-logo-logomark">Logomark</option>
+                            <!-- <option value="06-logo-wordmark">Wordmark</option> -->
+                            <option value="07-logo-favicon">Favicon</option>
+                            </select>
+                            <h3 class="card-title font-size-16 mb-5">
+                              Pozadí
+                            </h3>
+                            <div class="custom-radio mb-10">
+                              <input type="radio" name="light-vs-dark" id="radio-light" checked="checked" value="radio-light">
+                              <label for="radio-light">Na světlé pozadí</label>
+                            </div>
+                            <div class="custom-radio mb-10">
+                              <input type="radio" name="light-vs-dark" id="radio-dark" value="radio-dark">
+                              <label for="radio-dark">Na tmavé pozadí</label>
+                            </div>
+                            <h3 class="card-title font-size-16 mb-5">
+                              Barevnost
+                            </h3>
+                            <div class="custom-radio mb-10">
+                              <input type="radio" name="full-color-vs-black-white" id="radio-full-color" checked="checked" value="radio-full-color">
+                              <label for="radio-full-color">Plnobarevné</label>
+                            </div>
+                            <div class="custom-radio mb-10">
+                              <input type="radio" name="full-color-vs-black-white" id="radio-black-white" value="radio-black-white">
+                              <label for="radio-black-white">Černobílé</label>
+                            </div>
+                            <h3 class="card-title font-size-16 mb-5">
+                              Ochranná zóna
+                            </h3>
+                            <div class="custom-switch mb-20">
+                              <input type="checkbox" id="switch-zone" value="" checked="checked">
+                              <label for="switch-zone">Ochranná zóna</label>
+                            </div>
+                            <div class="d-flex flex-row btn-rounded hidden-sm-and-down">
+                              <div class="align-self-center">
+                                <div class="custom-checkbox mr-10" data-toggle="tooltip" data-title="Po stažení budu dodržovat pravidla.">
+                                  <input type="checkbox" id="checkbox-2" value="">
+                                  <label for="checkbox-2" class="blank"></label>
+                                </div>
+                              </div>
+                              <div class="w-full d-inline-block">
+                                <button id="download-button-desktop" class="btn btn-block btn-rounded">
+                                <svg class="onicon">
+                                  <use href="/global/icons/icons.svg#download"/>
+                                </svg>
+                                <span class="pl-5">Stáhnout</span>
+                              </button>
+                            </div>
+                            </div>
+                      </div>
+                    </div>
+                    </div>
+                    
+                    <div class="px-card pl-0 pr-0 pt-20">
+                      <div class="d-flex">
+                        <div class="custom-checkbox align-self-center flex-shrink-1 d-inline-block mr-10" data-toggle="tooltip" data-title="Po stažení budu dodržovat pravidla.">
+                          <input type="checkbox" id="checkbox-3" value="">
+                          <label for="checkbox-3" class="blank"></label>
+                        </div>
+                        <div class="custom-checkbox w-full d-inline-block">
+                          <a href="/manual/00-logopack.zip" download>
+                            <button id="download-button-complete-pack" class="btn btn-block btn-rounded">
+                            <svg class="onicon">
+                              <use href="/global/icons/icons.svg#download"/>
+                            </svg>
+                            <span class="pl-5">Logopack</span>
+                       
+                          </button>   </a>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+            <div class="col-lg-3 d-none d-lg-block">
+              <div class=" content on-this-page-nav" id="on-this-page-nav">
+                  <h2 class="content-title font-size-20">
+                      Obsah této sekce
+                  </h2>
+                  <a href="#logo">Logo a jeho použití</a>
+                  <a href="#logo-mozne-varianty">Možné varianty loga</a>
+                  <a href="#logo-zapis-v-textu">Zápis loga v textu</a>
+                  <a href="#logo-barevnost">Barevnost loga</a>
+                  <a href="#logo-ochranna-zona">Ochranná zóna loga</a>
+                  <a href="#logo-minimalni-velikost">Minimální velikost loga</a>
+                  <a href="#logo-stazeni">Loga ke stažení</a>
+              </div>
+            </div>  
+    
+  
+        </div>
+      </div>
+      <!----------------------------->
+    </div>
+  </div>
+
+
+  <div class="modal" id="modal-2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <a href="#" class="btn close" role="button" aria-label="Close">
+          <svg id="sidebar-icon" class="onicon">
+            <use xlink:href="/global/icons/icons.svg#cross"/>
+          </svg>
+        </a>
+        <h5 class="modal-title">Přihlasit se</h5>
+        <form action="..." method="...">
+          <div class="form-group">
+            <label for="username" class="required">Email</label>
+            <input type="text" id="username" class="form-control" placeholder="Email" required="required">
+          </div>
+          <div class="form-group">
+            <label for="password" class="required">Heslo</label>
+            <input type="password" id="password" class="form-control" placeholder="Heslo" required="required">
+          </div>
+          <input class="btn btn-primary btn-block btn-rounded" type="submit" value="Přihlásit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/global/js/halfmoon.js"></script>
+  <script src="/global/js/list.min.js"></script>
+  <script src="/global/js/script.js"></script>
+  <script src="/global/js/mavo.js"></script>
+
+</body>
+</html>
+
+
