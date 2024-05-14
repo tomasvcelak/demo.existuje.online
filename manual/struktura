@@ -1,0 +1,90 @@
+logopack structure
+│
+├── logo.html
+│
+└── 00-logopack
+    ├── 01-digital-rgb
+    │   ├── 01-logo-horizontal
+    │   │   ├── 01-logo-horizontal_black.svg
+    │   │   ├── 01-logo-horizontal_full-color-on-dark.svg
+    │   │   ├── 01-logo-horizontal_full-color-on-light.svg
+    │   │   └── 01-logo-horizontal_white.svg
+    │   │
+    │   ├── 02-logo-horizontal-claim
+    │   │   ├── 02-logo-horizontal-claim_black.svg
+    │   │   ├── 02-logo-horizontal-claim_full-color-on-dark.svg
+    │   │   ├── 02-logo-horizontal-claim_full-color-on-light.svg
+    │   │   └── 02-logo-horizontal-claim_white.svg
+    │   │
+    │   ├── 03-logo-vertical
+    │   │   ├── 03-logo-vertical_black.svg
+    │   │   ├── 03-logo-vertical_full-color-on-dark.svg
+    │   │   ├── 03-logo-vertical_full-color-on-light.svg
+    │   │   └── 03-logo-vertical_white.svg
+    │   │
+    │   ├── 04-logo-vertical-claim
+    │   │   ├── 04-logo-vertical-claim_black.svg
+    │   │   ├── 04-logo-vertical-claim_full-color-on-dark.svg
+    │   │   ├── 04-logo-vertical-claim_full-color-on-light.svg
+    │   │   └── 04-logo-vertical-claim_white.svg
+    │   │
+    │   ├── 05-logo-logomark
+    │   │   ├── 05-logo-logomark_black.svg
+    │   │   ├── 05-logo-logomark_full-color-on-dark.svg
+    │   │   ├── 05-logo-logomark_full-color-on-light.svg
+    │   │   └── 05-logo-logomark_white.svg
+    │   │
+    │   ├── 06-logo-wordmark
+    │   │   ├── 06-logo-wordmark_black.svg
+    │   │   ├── 06-logo-wordmark_full-color-on-dark.svg
+    │   │   ├── 06-logo-wordmark_full-color-on-light.svg
+    │   │   └── 06-logo-wordmark_white.svg
+    │   │
+    │   └── 07-logo-favicon
+    │       ├── 07-logo-favicon_black.svg
+    │       ├── 07-logo-favicon_full-color-on-dark.svg
+    │       ├── 07-logo-favicon_full-color-on-light.svg
+    │       └── 07-logo-favicon_white.svg
+    │
+    └── 02-print_cmyk
+        ├── 01-logo-horizontal
+        │   ├── 01-logo-horizontal_black.svg
+        │   ├── 01-logo-horizontal_full-color-on-dark.svg
+        │   ├── 01-logo-horizontal_full-color-on-light.svg
+        │   └── 01-logo-horizontal_white.svg
+        │
+        ├── 02-logo-horizontal-claim
+        │   ├── 02-logo-horizontal-claim_black.svg
+        │   ├── 02-logo-horizontal-claim_full-color-on-dark.svg
+        │   ├── 02-logo-horizontal-claim_full-color-on-light.svg
+        │   └── 02-logo-horizontal-claim_white.svg
+        │
+        ├── 03-logo-vertical
+        │   ├── 03-logo-vertical_black.svg
+        │   ├── 03-logo-vertical_full-color-on-dark.svg
+        │   ├── 03-logo-vertical_full-color-on-light.svg
+        │   └── 03-logo-vertical_white.svg
+        │
+        ├── 04-logo-vertical-claim
+        │   ├── 04-logo-vertical-claim_black.svg
+        │   ├── 04-logo-vertical-claim_full-color-on-dark.svg
+        │   ├── 04-logo-vertical-claim_full-color-on-light.svg
+        │   └── 04-logo-vertical-claim_white.svg
+        │
+        ├── 05-logo-logomark
+        │   ├── 05-logo-logomark_black.svg
+        │   ├── 05-logo-logomark_full-color-on-dark.svg
+        │   ├── 05-logo-logomark_full-color-on-light.svg
+        │   └── 05-logo-logomark_white.svg
+        │
+        ├── 06-logo-wordmark
+        │   ├── 06-logo-wordmark_black.svg
+        │   ├── 06-logo-wordmark_full-color-on-dark.svg
+        │   ├── 06-logo-wordmark_full-color-on-light.svg
+        │   └── 06-logo-wordmark_white.svg
+        │
+        └── 07-logo-favicon
+            ├── 07-logo-favicon_black.svg
+            ├── 07-logo-favicon_full-color-on-dark.svg
+            ├── 07-logo-favicon_full-color-on-light.svg
+            └── 07-logo-favicon_white.svg       
